@@ -15,12 +15,18 @@ import Component11 from './components/Component11.vue'
 import Component12 from './components/Component12.vue'
 import Component13 from './components/Component13.vue'
 import Component14 from './components/Component14.vue'
+import Component15 from './components/Component15.vue'
+import Component16 from './components/Component16.vue'
+import Component17 from './components/Component17.vue'
 
 const posts = ref([
   { id: 1, title: 'My journey with Vue' },
   { id: 2, title: 'Blogging with Vue' },
   { id: 3, title: 'Why Vue is so fun' }
 ])
+
+const firstName = ref('John')
+const lastName = ref('Doe')
 </script>
 
 <template>
@@ -38,10 +44,29 @@ const posts = ref([
     <Component11 />
     <Component12 />
     <Component13
-    v-for="post in posts"
-    :key="post.id"
-    :title="post.title"
+      v-for="post in posts"
+      :key="post.id"
+      :title="post.title"
     />
     <Component14 propC="Check console for Vue warning!" propF="test" />
+    <Component15 />
+    <Component16
+      v-model:first-name="firstName"
+      v-model:last-name="lastName"
+    />
+    <Component17>
+      <template #header>
+        <h2>Here might be a page title</h2>
+      </template>
+
+      <template #default>
+        <p>A paragraph for the main content.</p>
+        <p>And another one.</p>
+      </template>
+
+      <template #footer>
+        <p>Here's some contact info</p>
+      </template>
+    </Component17>
   </div>
 </template>
