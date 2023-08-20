@@ -1,5 +1,5 @@
 <script setup>
-import { ref, watchEffect, onMounted } from 'vue'
+import { ref, watchEffect } from 'vue'
 
 const input = ref(null)
 const output = ref(null)
@@ -8,9 +8,9 @@ watchEffect(() => {
   output.value = input.value
 })
 
-onMounted(() => {
+/* onMounted(() => {
   input.value.focus()
-})
+}) */
 </script>
 
 <template>
