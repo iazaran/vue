@@ -1,6 +1,6 @@
 <script setup>
 import { provide, ref } from 'vue'
-import ComponentInjector18 from './ComponentInjector18.vue'
+import Component18Injector from './Component18Injector.vue'
 
 const location = ref('North Pole')
 
@@ -19,6 +19,6 @@ provide('location', {
   <div class="max-w-2xl lg:text-center border border-l-3 rounded border-gray-500 p-5">
     <h2 class="text-2xl mb-5">Provide / Inject</h2>
 
-    <ComponentInjector18 />
+    <Component18Injector />
   </div>
 </template>
