@@ -1,5 +1,5 @@
 <script setup>
-import { ref } from 'vue'
+import { ref, defineAsyncComponent } from 'vue'
 
 import Component1 from './components/Component1.vue'
 import Component2 from './components/Component2.vue'
@@ -18,7 +18,11 @@ import Component14 from './components/Component14.vue'
 import Component15 from './components/Component15.vue'
 import Component16 from './components/Component16.vue'
 import Component17 from './components/Component17.vue'
-import ComponentProvider18 from './components/ComponentProvider18.vue'
+import Component18Provider from './components/Component18Provider.vue'
+const Component19 = defineAsyncComponent(() =>
+import('./components/Component19.vue')
+)
+import Component20 from './components/Component20.vue'
 
 const posts = ref([
   { id: 1, title: 'My journey with Vue' },
@@ -69,6 +73,8 @@ const lastName = ref('Doe')
         <p>Here's some contact info</p>
       </template>
     </Component17>
-    <ComponentProvider18 />
+    <Component18Provider />
+    <Component19 />
+    <Component20 />
   </div>
 </template>
