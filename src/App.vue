@@ -23,6 +23,8 @@ const Component19 = defineAsyncComponent(() =>
 import('./components/Component19.vue')
 )
 import Component20 from './components/Component20.vue'
+import Component21 from './components/Component21.vue'
+import Component22 from './components/Component22.vue'
 
 const posts = ref([
   { id: 1, title: 'My journey with Vue' },
@@ -36,6 +38,8 @@ const lastName = ref('Doe')
 
 <template>
   <div class="bg-amber-50 flex flex-col items-center py-5">
+    <h1 class="text-4xl font-semibold mt-3">Vue 3 + Vite</h1>
+    
     <Component1 rawString="<span style='color: red'>This should be red.</span>" rawHtml="<span style='color: red'>This should be red.</span>" />
     <Component2 />
     <Component3 />
@@ -76,5 +80,7 @@ const lastName = ref('Doe')
     <Component18Provider />
     <Component19 />
     <Component20 />
+    <Component21 />
+    <Component22 />
   </div>
 </template>
