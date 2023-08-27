@@ -1,5 +1,5 @@
 <script setup>
-import { useMouse } from './mouse.js'
+import { useMouse } from '../functions/mouse.js'
 
 const { x, y } = useMouse()
 </script>
