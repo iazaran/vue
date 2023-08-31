@@ -20,7 +20,7 @@ import Component16 from './components/Component16.vue'
 import Component17 from './components/Component17.vue'
 import Component18Provider from './components/Component18Provider.vue'
 const Component19 = defineAsyncComponent(() =>
-import('./components/Component19.vue')
+  import('./components/Component19.vue')
 )
 import Component20 from './components/Component20.vue'
 import Component21 from './components/Component21.vue'
@@ -28,6 +28,7 @@ import Component22 from './components/Component22.vue'
 import Component23 from './components/Component23.vue'
 import Component24 from './components/Component24.vue'
 import Component25 from './components/Component25.vue'
+import Component26 from './components/Component26.vue'
 
 const posts = ref([
   { id: 1, title: 'My journey with Vue' },
@@ -88,5 +89,6 @@ const lastName = ref('Doe')
     <Component23 />
     <Component24 />
     <Component25 />
+    <Component26 />
   </div>
 </template>
