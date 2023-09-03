@@ -29,6 +29,7 @@ import Component23 from './components/Component23.vue'
 import Component24 from './components/Component24.vue'
 import Component25 from './components/Component25.vue'
 import Component26 from './components/Component26.vue'
+import Component27 from './components/Component27.vue'
 
 const posts = ref([
   { id: 1, title: 'My journey with Vue' },
@@ -90,5 +91,6 @@ const lastName = ref('Doe')
     <Component24 />
     <Component25 />
     <Component26 />
+    <Component27 />
   </div>
 </template>
