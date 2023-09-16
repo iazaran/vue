@@ -1,5 +1,6 @@
 <script setup>
 import { ref } from 'vue'
+import ExternalLink from './ExternalLink.vue';
 
 const sets = ref([
   [1, 2, 3, 4, 5],
@@ -13,7 +14,8 @@ function even(numbers) {
 
 <template>
   <h1 class="text-5xl mt-6">8</h1>
-  <div class="max-w-2xl lg:text-center border border-l-3 rounded border-gray-500 p-5">
+  <div class="relative max-w-2xl lg:text-center border border-l-3 rounded border-gray-500 p-5">
+    <ExternalLink link="https://vuejs.org/guide/essentials/list.html#list-rendering" />
     <h2 class="text-2xl mb-5">List Rendering</h2>
     
     <ul v-for="(numbers, index) in sets">

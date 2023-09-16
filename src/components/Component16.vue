@@ -1,4 +1,6 @@
 <script setup>
+import ExternalLink from './ExternalLink.vue';
+
 defineProps({
   firstName: String,
   lastName: String
@@ -9,7 +11,8 @@ defineEmits(['update:firstName', 'update:lastName'])
 
 <template>
   <h1 class="text-5xl mt-6">16</h1>
-  <div class="max-w-2xl lg:text-center border border-l-3 rounded border-gray-500 p-5">
+  <div class="relative max-w-2xl lg:text-center border border-l-3 rounded border-gray-500 p-5">
+    <ExternalLink link="https://vuejs.org/guide/components/v-model.html#multiple-v-model-bindings" />
     <h2 class="text-2xl mb-5">Multiple v-model bindings</h2>
 
     <h4 class="mb-3 text-lg">{{ firstName }} {{ lastName }}</h4>

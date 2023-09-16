@@ -1,5 +1,6 @@
 <script setup>
 import { ref, computed } from 'vue'
+import ExternalLink from './ExternalLink.vue';
 
 const firstName = ref('John')
 const lastName = ref('Doe')
@@ -19,7 +20,8 @@ fullName.value = 'Jane Doe'
 
 <template>
   <h1 class="text-5xl mt-6">5</h1>
-  <div class="max-w-2xl lg:text-center border border-l-3 rounded border-gray-500 p-5">
+  <div class="relative max-w-2xl lg:text-center border border-l-3 rounded border-gray-500 p-5">
+    <ExternalLink link="https://vuejs.org/guide/essentials/computed.html#writable-computed" />
     <h2 class="text-2xl mb-5">Writable Computed</h2>
     
     <p class="text-xl">John Doe or {{ fullName }}</p>

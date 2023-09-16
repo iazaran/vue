@@ -1,4 +1,6 @@
 <script setup>
+import ExternalLink from './ExternalLink.vue';
+
 defineProps({
   // Basic type check
   // (`null` and `undefined` values will allow any type)
@@ -46,7 +48,8 @@ defineProps({
 
 <template>
   <h1 class="text-5xl mt-6">14</h1>
-  <div class="max-w-2xl lg:text-center border border-l-3 rounded border-gray-500 p-5">
+  <div class="relative max-w-2xl lg:text-center border border-l-3 rounded border-gray-500 p-5">
+    <ExternalLink link="https://vuejs.org/guide/components/props.html#prop-validation" />
     <h2 class="text-2xl mb-5">Prop Validation</h2>
     
     <h4>{{ propF }}</h4>

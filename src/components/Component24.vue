@@ -1,5 +1,6 @@
 <script setup>
 import { ref } from 'vue'
+import ExternalLink from './ExternalLink.vue';
 
 const getInitialItems = () => [1, 2, 3, 4, 5]
 const items = ref(getInitialItems())
@@ -31,7 +32,8 @@ function remove(item) {
 
 <template>
   <h1 class="text-5xl mt-6">24</h1>
-  <div class="max-w-2xl lg:text-center border border-l-3 rounded border-gray-500 p-5">
+  <div class="relative max-w-2xl lg:text-center border border-l-3 rounded border-gray-500 p-5">
+    <ExternalLink link="https://vuejs.org/guide/built-ins/transition-group.html#transitiongroup" />
     <h2 class="text-2xl mb-5">TransitionGroup</h2>
     
     <button class="bg-blue-100 border border-blue-500 rounded-md px-4 py-2 mr-2" @click="insert">Random Insert</button>

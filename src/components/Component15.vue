@@ -1,5 +1,6 @@
 <script setup>
 import { ref, defineEmits } from 'vue'
+import ExternalLink from './ExternalLink.vue';
 
 const checkedRequired = ref([])
 const validation = ref(false)
@@ -25,7 +26,8 @@ function submitForm() {
 
 <template>
   <h1 class="text-5xl mt-6">15</h1>
-  <div class="max-w-2xl lg:text-center border border-l-3 rounded border-gray-500 p-5">
+  <div class="relative max-w-2xl lg:text-center border border-l-3 rounded border-gray-500 p-5">
+    <ExternalLink link="https://vuejs.org/guide/components/events.html#events-validation" />
     <h2 class="text-2xl mb-5">Events Validation</h2>
 
     <p class="mb-3">Validation: {{ validation ? 'Valid' : 'Invalid' }}</p>
