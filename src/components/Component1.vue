@@ -10,8 +10,8 @@ defineProps({
 <template>
   <h1 class="text-5xl mt-6">1</h1>
   <div class="relative max-w-2xl lg:text-center border border-l-3 rounded border-gray-500 p-5">
-    <ExternalLink link="https://vuejs.org/guide/essentials/template-syntax.html#raw-html" />
-    <h2 class="text-2xl mb-5">Comparing Text Interpolation and Raw HTML</h2>
+    <ExternalLink link="https://vuejs.org/guide/essentials/template-syntax.html#text-interpolation" />
+    <h2 class="text-2xl mb-5">Text Interpolation / Raw HTML</h2>
     
     <p>{{ rawString }}</p>
     <p><span v-html="rawHtml"></span></p>
