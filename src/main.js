@@ -2,7 +2,7 @@ import { createApp } from 'vue'
 import './style.css'
 import App from './App.vue'
 import * as VueRouter from 'vue-router';
-import i18nPlugin from './plugins/i18n'
+import { englishToFrench } from "@/utils"
 
 import Component27Home from './components/Component27Home.vue'
 import Component27About from './components/Component27About.vue'
@@ -22,10 +22,7 @@ const router = VueRouter.createRouter({
 const app = createApp(App)
 
 app.use(router)
-app.use(i18nPlugin, {
-    greetings: {
-      hello: 'Bonjour!'
-    }
-})
+
+englishToFrench(app);
 
 app.mount('#app')
