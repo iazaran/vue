@@ -8,8 +8,10 @@ export default defineConfig({
   plugins: [vue()],
   resolve: {
     alias: {
+      '@/content': fileURLToPath(new URL('./src/utils/content', import.meta.url)),
+      '@/helpers': fileURLToPath(new URL('./src/utils/helpers', import.meta.url)),
+      '@/plugins': fileURLToPath(new URL('./src/plugins', import.meta.url)),
       '@/utils': fileURLToPath(new URL('./src/utils', import.meta.url)),
-      '@/helpers': fileURLToPath(new URL('./src/utils/helpers', import.meta.url))
     }
   }
 })

@@ -1,10 +1,9 @@
-import i18nPlugin from '../../../plugins/i18n'
+import { i18n } from '@/plugins'
+import { translations } from "@/content"
 
 const englishToFrench = (app) => {
-    app.use(i18nPlugin, {
-        greetings: {
-          hello: 'Bonjour!'
-        }
+    app.use(i18n, {
+        translations
     })
 }
 
