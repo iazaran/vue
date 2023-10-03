@@ -18,7 +18,7 @@ import Component14 from './components/Component14.vue'
 import Component15 from './components/Component15.vue'
 import Component16 from './components/Component16.vue'
 import Component17 from './components/Component17.vue'
-import Component18Provider from './components/Component18Provider.vue'
+import Component18Provider from './components/Component18/Component18Provider.vue'
 const Component19 = defineAsyncComponent(() =>
   import('./components/Component19.vue')
 )
@@ -27,10 +27,10 @@ import Component21 from './components/Component21.vue'
 import Component22 from './components/Component22.vue'
 import Component23 from './components/Component23.vue'
 import Component24 from './components/Component24.vue'
-import Component25 from './components/Component25.vue'
-import Component26 from './components/Component26.vue'
-import Component27 from './components/Component27.vue'
-import Component28 from './components/Component28.vue'
+import Component25 from './components/Component25/Component25.vue'
+import Component26 from './components/Component26/Component26.vue'
+import Component27 from './components/Component27/Component27.vue'
+import Component28 from './components/Component28/Component28.vue'
 import Component29 from './components/Component29.vue'
 
 const posts = ref([
