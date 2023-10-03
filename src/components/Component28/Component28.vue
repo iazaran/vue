@@ -1,7 +1,7 @@
 <script setup>
 import Component28A from './Component28A.vue'
 import Component28B from './Component28B.vue'
-import ExternalLink from './ExternalLink.vue';
+import ExternalLink from '../ExternalLink.vue';
 </script>
 
 <template>

@@ -1,5 +1,5 @@
 import { expect, test, describe } from 'vitest'
-import { increment } from '../functions/helper'
+import { increment } from '@/functions'
 
 describe('increment', () => {
   test('increments the current number by 1', () => {

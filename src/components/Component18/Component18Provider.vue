@@ -1,7 +1,7 @@
 <script setup>
 import { provide, ref } from 'vue'
 import Component18Injector from './Component18Injector.vue'
-import ExternalLink from './ExternalLink.vue';
+import ExternalLink from '../ExternalLink.vue';
 
 const location = ref('North Pole')
 

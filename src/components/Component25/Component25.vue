@@ -2,7 +2,7 @@
 import { shallowRef } from 'vue'
 import Component25A from './Component25A.vue'
 import Component25B from './Component25B.vue'
-import ExternalLink from './ExternalLink.vue';
+import ExternalLink from '../ExternalLink.vue';
 
 const current = shallowRef(Component25A)
 </script>

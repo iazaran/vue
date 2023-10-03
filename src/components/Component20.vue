@@ -1,5 +1,5 @@
 <script setup>
-import { useMouse } from '../functions/mouse.js'
+import { useMouse } from '@/functions'
 import ExternalLink from './ExternalLink.vue';
 
 const { x, y } = useMouse()

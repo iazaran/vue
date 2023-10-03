@@ -1,5 +1,5 @@
 <script setup>
-import ExternalLink from './ExternalLink.vue';
+import ExternalLink from '../ExternalLink.vue';
 </script>
 
 <template>
