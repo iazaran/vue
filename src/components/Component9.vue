@@ -12,7 +12,7 @@ function alert(message) {
     <ExternalLink link="https://vuejs.org/guide/essentials/event-handling.html#key-modifiers" />
     <h2 class="text-2xl mb-5">Key Modifiers</h2>
     
-    <p>Active the input and press <key>Esc</key> key</p>
+    <p>Active the input and press <kbd>Esc</kbd> key</p>
     <input class="disabled:opacity-75" @keyup.esc="alert('So you know it is on top left!')" />
   </div>
 </template>
