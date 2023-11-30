@@ -1,5 +1,5 @@
 <script setup>
-import { ref, defineEmits } from 'vue'
+import { ref } from 'vue'
 import ExternalLink from './ExternalLink.vue';
 
 const checkedRequired = ref([])
@@ -10,17 +10,14 @@ const emit = defineEmits({
   click: null,
 
   // Validate submit event
-  submit: ({ checkedRequired }) => {
-    if (checkedRequired[0] == 'Required 1' && checkedRequired[1] == 'Required 2') {
-      return true
-    }
-
-    return false
+  submit: ({ checkedRequired, validation }) => {
+    validation.value = checkedRequired.value[0] == 'Required 1' && checkedRequired.value[1] == 'Required 2'
+    return validation.value
   }
 })
 
 function submitForm() {
-  validation.value = emit('submit', { checkedRequired })
+  emit('submit', { checkedRequired, validation })
 }
 </script>
 
