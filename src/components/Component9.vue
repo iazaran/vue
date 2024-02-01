@@ -1,9 +1,8 @@
 <script setup>
+import { ref } from 'vue'
 import ExternalLink from './ExternalLink.vue';
 
-function alert(message) {
-  window.alert(message)
-}
+const touchedKey = ref(true)
 </script>
 
 <template>
@@ -12,7 +11,8 @@ function alert(message) {
     <ExternalLink link="https://vuejs.org/guide/essentials/event-handling.html#key-modifiers" />
     <h2 class="text-2xl mb-5">Key Modifiers</h2>
     
-    <p>Active the input and press <kbd>Esc</kbd> key</p>
-    <input class="disabled:opacity-75" @keyup.esc="alert('So you know it is on top left!')" />
+    <p v-if="touchedKey">Active the input and press <kbd>Esc</kbd> key</p>
+    <p v-else>So you know where is the Esc key ;-)</p>
+    <input class="disabled:opacity-75 mt-2" @keyup.esc="touchedKey = !touchedKey" />
   </div>
 </template>
