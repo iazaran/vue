@@ -5,9 +5,9 @@ import ExternalLink from './ExternalLink.vue';
 const input = ref(null)
 const output = ref(null)
 
-watchEffect(() => {
+watchEffect(() => 
   output.value = input.value
-})
+)
 
 /* onMounted(() => {
   input.value.focus()
@@ -21,6 +21,6 @@ watchEffect(() => {
     <h2 class="text-2xl mb-5">Accessing the Template Refs</h2>
     
     <p class="mb-3">Input: {{ output }}</p>
-    <input ref="input" />
+    <input ref="input" v-model="output">
   </div>
 </template>
